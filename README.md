@@ -5,12 +5,12 @@ LIRI NODE.JS APP
 
 LIRI uses the inquirer npm library to make user expereince better.
 
-Commands:
+
 ![Alt text](images/example.png?raw=true "Example Search")
 
 Twitter
 -------
-This allows the user to access the latest 5 tweets from my Twitter
+This allows the user to access the latest 5 tweets from my Twitter or do a general search.
 
 Spotify
 -------
