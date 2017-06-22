@@ -1,3 +1,21 @@
 
 Spotify Search: I Want It That Way, Backstreet Boys
 ======================
+Spotify Search: Hello, Adele
+======================
+Movie Search: The Matrix
+======================
+Twitter Search: lakers
+======================
+Twitter Search: tesla
+======================
+Twitter Search: liri
+======================
+Twitter Search: node
+======================
+Twitter Search: batman
+======================
+Twitter Search: pstest Tweets
+======================
+Twitter Search: pstest Tweets
+======================

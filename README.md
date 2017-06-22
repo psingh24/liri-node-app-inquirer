@@ -12,13 +12,19 @@ Twitter
 -------
 This allows the user to access the latest 5 tweets from my Twitter or do a general search.
 
+![Alt text](images/tweet.png?raw=true "twitter Search")
+
 Spotify
 -------
 This allows the user to search for a song and access information about that song from Spotify
 
+![Alt text](images/spotify.png?raw=true "spotify Search")
+
 OMDB
 ----
 This allows the user to search for a movie title and return specific IMDB information about that movie
+
+![Alt text](images/movie.png?raw=true "movie Search")
 
 
 
