@@ -74,18 +74,49 @@ function liri() {
                 twitterSearch = answers.twitter;
                 T.get('search/tweets', { q: answers.twitter, count: 5 }, getTwitterData)
                 setTimeout(searchAgain, 2000)
-            } else if(answers.myTwitter){
+            } 
+            else if(answers.myTwitter){
                 TT.get('statuses/user_timeline', {screen_name: 'pstesttwit'}, getYourTwitter)
                 setTimeout(searchAgain, 2000)
             }
             else if(answers.spotify){
+
                 S.search({type: 'track', query: answers.spotify}, getSpotifyData)
+                setTimeout(searchAgain, 2000)
+            }
+            else if(!answers.movie) {
+                request("http://www.omdbapi.com/?t=Mr.Nobody&y=&plot=short&apikey=40e9cece", getMovieData);
+                setTimeout(searchAgain, 2000)  
+            }
+            else if(!answers.spotify) {
+
+                S.search({type: 'track', query: "The Sign"}, function(err, data) {
+                    if (err) {
+                        return console.log('Error occurred: ' + err);
+                }
+                        var artist = data.tracks.items[4].artists[0].name;
+                        var songName = data.tracks.items[4].name;
+                        var preview = data.tracks.items[4].preview_url;
+                        var album = data.tracks.items[4].album.name;
+
+                        console.log("")
+                        console.log("Artist: "+artist)
+                        console.log("Album: "+album)
+                        console.log("Song Name: "+songName)
+                        console.log("Preview Url: "+preview)
+
+                        var output = "\nSpotify Search: "+songName+", "+artist+"\n======================" 
+
+                        writeToLogTxt(output)
+                
+                    })
                 setTimeout(searchAgain, 2000)
             }
             else if (answers.movie) {
                 request("http://www.omdbapi.com/?t="+answers.movie+"&y=&plot=short&apikey=40e9cece", getMovieData);
                 setTimeout(searchAgain, 2000)
-            }else if(answers.route) {
+            }
+            else if(answers.route) {
                 doWhatItSays()
                 setTimeout(searchAgain, 2000)
             }
