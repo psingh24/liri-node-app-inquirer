@@ -84,34 +84,34 @@ function liri() {
                 S.search({type: 'track', query: answers.spotify}, getSpotifyData)
                 setTimeout(searchAgain, 2000)
             }
-            else if(!answers.movie) {
-                request("http://www.omdbapi.com/?t=Mr.Nobody&y=&plot=short&apikey=40e9cece", getMovieData);
-                setTimeout(searchAgain, 2000)  
-            }
-            else if(!answers.spotify) {
+            // else if(!answers.movie) {
+            //     request("http://www.omdbapi.com/?t=Mr.Nobody&y=&plot=short&apikey=40e9cece", getMovieData);
+            //     setTimeout(searchAgain, 2000)  
+            // }
+            // else if(!answers.spotify) {
 
-                S.search({type: 'track', query: "The Sign"}, function(err, data) {
-                    if (err) {
-                        return console.log('Error occurred: ' + err);
-                }
-                        var artist = data.tracks.items[4].artists[0].name;
-                        var songName = data.tracks.items[4].name;
-                        var preview = data.tracks.items[4].preview_url;
-                        var album = data.tracks.items[4].album.name;
+            //     S.search({type: 'track', query: "The Sign"}, function(err, data) {
+            //         if (err) {
+            //             return console.log('Error occurred: ' + err);
+            //     }
+            //             var artist = data.tracks.items[4].artists[0].name;
+            //             var songName = data.tracks.items[4].name;
+            //             var preview = data.tracks.items[4].preview_url;
+            //             var album = data.tracks.items[4].album.name;
 
-                        console.log("")
-                        console.log("Artist: "+artist)
-                        console.log("Album: "+album)
-                        console.log("Song Name: "+songName)
-                        console.log("Preview Url: "+preview)
+            //             console.log("")
+            //             console.log("Artist: "+artist)
+            //             console.log("Album: "+album)
+            //             console.log("Song Name: "+songName)
+            //             console.log("Preview Url: "+preview)
 
-                        var output = "\nSpotify Search: "+songName+", "+artist+"\n======================" 
+            //             var output = "\nSpotify Search: "+songName+", "+artist+"\n======================" 
 
-                        writeToLogTxt(output)
+            //             writeToLogTxt(output)
                 
-                    })
-                setTimeout(searchAgain, 2000)
-            }
+            //         })
+            //     setTimeout(searchAgain, 2000)
+            // }
             else if (answers.movie) {
                 request("http://www.omdbapi.com/?t="+answers.movie+"&y=&plot=short&apikey=40e9cece", getMovieData);
                 setTimeout(searchAgain, 2000)

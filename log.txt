@@ -55,3 +55,19 @@ Movie Search: Mr. Nobody
 ======================
 Movie Search: Mr. Nobody
 ======================
+Twitter Search: pstest Tweets
+======================
+Movie Search: Mr. Nobody
+======================
+Spotify Search: The Sign, Ace of Base
+======================
+Spotify Search: I Want It That Way, Backstreet Boys
+======================
+Movie Search: The Lion King
+======================
+Twitter Search: under armour
+======================
+Twitter Search: pstest Tweets
+======================
+Spotify Search: Hello, Adele
+======================
