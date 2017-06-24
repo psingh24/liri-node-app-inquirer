@@ -71,3 +71,23 @@ Twitter Search: pstest Tweets
 ======================
 Spotify Search: Hello, Adele
 ======================
+Twitter Search: pstest Tweets
+======================
+Movie Search: Mr. Nobody
+======================
+Movie Search: Mr. Nobody
+======================
+Movie Search: Mr. Nobody
+======================
+Spotify Search: The Sign, Ace of Base
+======================
+Spotify Search: The Sign, Ace of Base
+======================
+Spotify Search: Hello, Adele
+======================
+Movie Search: Mr. Nobody
+======================
+Spotify Search: The Sign, Ace of Base
+======================
+Movie Search: Mr. Nobody
+======================
