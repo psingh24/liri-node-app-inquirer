@@ -91,3 +91,13 @@ Spotify Search: The Sign, Ace of Base
 ======================
 Movie Search: Mr. Nobody
 ======================
+Movie Search: The Lion King
+======================
+Spotify Search: I Want It That Way, Backstreet Boys
+======================
+Movie Search: Mr. Nobody
+======================
+Spotify Search: The Sign, Ace of Base
+======================
+Movie Search: The Matrix
+======================
