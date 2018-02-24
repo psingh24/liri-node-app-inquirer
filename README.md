@@ -1,7 +1,7 @@
 LIRI NODE.JS APP 
 ----------------
 
-LIRI is a command line node app that allows users to choose what type of data they wish to search for and what information to search under each category. It returns the information to the console and also stores the data in the log.txt file. You will need to API keys for twitter and spotify in keys.js.
+LIRI is a command line node app that allows users to choose what type of data they wish to search for and what information to search under each category. It returns the information to the console and also stores the data in the log.txt file. You will need to add API keys for twitter and spotify in keys.js.
 
 LIRI uses the inquirer npm library to make user expereince better.
 
